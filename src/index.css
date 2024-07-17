@@ -2,34 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf), 
+    url(./assets/fonts/static/HankenGrotesk-Bold.ttf),
+    url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+  font-weight: 500, 700, 800;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: normal;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Colors */
+
+  /* Primary */
+--light-red: hsl(0, 100%, 67%);
+--orangey-yellow: hsl(39, 100%, 56%);
+--green-teal: hsl(166, 100%, 37%);
+--cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+--bg-light-slate-blue: hsl(252, 100%, 67%);
+--bg-light-royal-blue: hsl(241, 81%, 54%);
+
+--circle-violet-blue: hsla(256, 72%, 46%, 1);
+--circle-persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+--white: hsl(0, 0%, 100%);
+--pale-blue: hsl(221, 100%, 96%);
+--pight-lavender: hsl(241, 100%, 89%);
+--dark-gray-blue: hsl(224, 30%, 27%);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -50,23 +66,16 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.list li {
+ @apply flex justify-between gap-4 p-2 rounded-lg bg-slate-100
 }
