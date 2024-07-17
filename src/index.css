@@ -4,10 +4,7 @@
 
 @font-face {
   font-family: "Hanken Grotesk";
-  src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf), 
-    url(./assets/fonts/static/HankenGrotesk-Bold.ttf),
-    url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
-  font-weight: 500, 700, 800;
+  src: url(./assets/fonts/HankenGrotesk.ttf);
 }
 
 :root {
