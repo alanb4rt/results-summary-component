@@ -53,26 +53,29 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  background: var(--dark-gray-blue);
+  color: white;
+  width: 100%;
+  border-radius: 50vmax;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #646cff;
+button:hover,
+.bg-result {
+  background: linear-gradient(to top, var(--bg-light-royal-blue), var(--bg-light-slate-blue));
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.bg-note {
+  background: linear-gradient(to bottom, var(--circle-violet-blue), var(--circle-persian-blue));
 }
 
 .list li {
  @apply flex justify-between gap-4 p-2 rounded-lg bg-slate-100
+}
+
+.color-light {
+  color: var(--pight-lavender);
 }
