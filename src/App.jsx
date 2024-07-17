@@ -4,7 +4,7 @@ export default function App() {
   return (
     <>
       <main className="container mx-auto min-h-screen grid place-content-center">
-        <section className="bg-white grid grid-cols-2 max-w-screen-sm rounded-2xl shadow-xl">
+        <section className="card bg-white grid grid-cols-2 max-w-screen-sm rounded-2xl shadow-xl">
           <div className="bg-result text-center text-white p-10 rounded-2xl">
             <p className="color-light font-bold">Your Result</p>
             <div className="bg-note grid place-content-center leading-none p-2 rounded-full size-36 mx-auto m-4">
