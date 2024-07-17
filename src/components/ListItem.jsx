@@ -1,12 +1,15 @@
 import data from "../utils/data.json";
+import { getImageUrl } from "../utils/imageUrl";
 
 export function Item({ category, score, icon }) {
-  const pathIcon = `./src/${icon}`;
+  const cleanIconUrl = icon.substring(1);
+  const iconUrl = getImageUrl(cleanIconUrl);
+
   return (
     <>
       <li className="item">
         <div className="flex items-center gap-2">
-          <img src={pathIcon} className="size-4" alt={`Icon ${category}`} />
+          <img src={iconUrl} className="size-4" alt={`Icon ${category}`} />
           <p className="item-category">{category}</p>
         </div>
         <span className="item-score">
