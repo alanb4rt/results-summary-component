@@ -1,3 +1,5 @@
+import ListItem from "./components/ListItem";
+
 export default function App() {
   return (
     <>
@@ -15,23 +17,10 @@ export default function App() {
               tests.
             </p>
           </div>
-          <div className="p-10">
+          <div className="flex flex-col justify-between gap-4 p-10">
             <p className="font-bold">Summary</p>
-            <ul className="list flex flex-col gap-4 mt-4 mb-4">
-              <li>
-                Reaction <span>80 / 100</span>
-              </li>
-              <li>
-                Memory <span>92 / 100</span>
-              </li>
-              <li>
-                Verbal <span>61 / 100</span>
-              </li>
-              <li>
-                Visual <span>72 / 100</span>
-              </li>
-            </ul>
-            <button>Continue</button>
+            <ListItem />
+            <button className="text-sm">Continue</button>
           </div>
         </section>
       </main>
