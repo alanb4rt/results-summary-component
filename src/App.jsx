@@ -1,3 +1,4 @@
+import CircleResult from "./components/CircleResult";
 import ListItem from "./components/ListItem";
 
 export default function App() {
@@ -7,10 +8,7 @@ export default function App() {
         <section className="card bg-white grid grid-cols-2 max-w-screen-sm rounded-2xl shadow-xl">
           <div className="bg-result text-center text-white p-10 rounded-2xl">
             <p className="color-light font-bold">Your Result</p>
-            <div className="bg-note grid place-content-center leading-none p-2 rounded-full size-36 mx-auto m-4">
-              <p className="text-5xl font-bold">76</p>
-              <p className="color-light text-xs">of 100</p>
-            </div>
+            <CircleResult />
             <p className="text-2xl font-bold">Great</p>
             <p className="color-light text-sm mt-4">
               You scored higher than 65% of the people who have taken these
